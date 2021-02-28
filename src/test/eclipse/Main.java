@@ -23,6 +23,7 @@ public class Main {
 			{
 				System.out.println(sc2.nextInt() * 1000);
 			}
+			sc2.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("파일을 찾는 도중 에러가 발생했습니다.");
 		}
