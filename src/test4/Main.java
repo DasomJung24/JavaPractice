@@ -40,6 +40,25 @@ public class Main {
 			sum += array2[i];
 		}
 		System.out.println("100개의 랜덤 정수의 평균 값은 " + sum / 100);
+		
+		// 가로 세로가 50인 이차원 배열 만들기 
+		int N = 50;
+		int[][] array3 = new int[N][N];
+		for(int i = 0; i < N; i++)
+		{
+			for(int j = 0; j < N; j++)
+			{
+				array3[i][j] = (int)(Math.random() * 10);
+			}
+		}
+		for(int i = 0; i < N; i++)
+		{
+			for(int j = 0; j < N; j++)
+			{
+				System.out.print(array3[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 }
